@@ -1,0 +1,259 @@
+/*去除默认样式*/
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*背景图片居中，填充样式，居中，固定样式*/
+body{
+    background: url("../img/background_img.jpg") no-repeat top fixed;
+}
+/*通天栏*/
+.top_bar{
+    position: relative;
+    margin: 10px auto 20px;
+    width: 1226px;
+    height: 85px;
+    background-color: rgba(76,57,52,.5);
+    border-radius: 5px;
+}
+.top_bar div.title{
+    position: absolute;
+    left: 50%;
+    margin-left: -210px;
+    height: 70px;
+    width: 400px;
+    background: url("../img/1533346012_629049.png") no-repeat;
+}
+/*主要功能块*/
+.main{
+    margin: 0 auto;
+    width: 1226px;
+    overflow: hidden;
+
+}
+.left{
+    position: relative;
+    width: 400px;
+    /*height: 700px;*/
+    float: left;
+    overflow: hidden;
+    /*background-color: rgba(76,57,52,.5);*/
+    /*border-radius: 5px;*/
+    /*margin-bottom: 30px;*/
+
+}
+.add_input{
+    margin-bottom: 28px;
+}
+.add_input input{
+    width: 250px;
+    height: 28px;
+    border: 2px solid #ff6700;
+    border-radius: 5px;
+    cursor: text;
+}
+.add_input button{
+    height: 28px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.pow{
+    position: relative;
+    width: 230px;
+    height: 200px;
+    margin-bottom: 28px;
+    margin-left: 15px;
+    border: 1px solid #ff6700;
+    cursor: pointer;
+    overflow: hidden;
+}
+.pow ul{
+    position: absolute;
+}
+.pow li{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.white{
+    height: 50px;
+}
+
+/*日历*/
+.calendar{
+    width: 240px;
+    display: block;
+    margin-left: 10px;
+
+}
+
+/**
+ * 设置日历顶部盒子
+ */
+.calendar .calendar-title-box{
+  position: relative;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  text-align:center;
+  border-bottom: 1px solid #ddd;
+}
+
+/**
+ * 设置上个月的按钮图标
+ */
+.calendar .prev-month {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 0;
+  border-top: 6px solid transparent;
+  border-right: 8px solid #999;
+  border-bottom: 6px solid transparent;
+  cursor: pointer;
+}
+
+/**
+ * 设置下个月的按钮图标
+ */
+.calendar .next-month {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-right: 0;
+  border-top: 6px solid transparent;
+  border-left: 8px solid #999;
+  border-bottom: 6px solid transparent;
+  cursor: pointer;
+}
+
+
+/* 设置日历表格样式 */
+.calendar-table{
+  width: 100%;
+  border-collapse: collapse;
+  text-align:center;
+}
+
+/* 表格行高 */
+.calendar-table tr{
+  height: 30px;
+  line-height: 30px;
+}
+
+/* 当前天 颜色特殊显示 */
+.currentDay {
+  color: red;
+}
+
+/* 本月 文字颜色 */
+.currentMonth {
+  color: #333;
+}
+
+/* 其他月颜色 */
+.otherMonth{
+  color: #999;
+}
+
+/*右边事项部分*/
+.right{
+    position: relative;
+    float: right;
+    width: 800px;
+    /*height: 700px;*/
+    overflow: hidden;
+}
+.main-banner{
+    position: relative;
+    background-color: rgba(76,57,52,.5);
+    border-radius: 5px;
+    /*margin-bottom: 30px;*/
+    padding-left: 10px;
+}
+.done .main-banner{
+    margin-top: 30px;
+}
+div.count{
+    cursor: pointer;
+}
+.right li .main-banner i{
+    font-size: 25px;
+}
+
+.doing_count span,.done_count span{
+    position: absolute;
+    right: 18px;
+    top: 5px;
+}
+.doing_count i,.done_count i{
+    position: absolute;
+    right: 10px;
+    top: 2px;
+}
+#b2{
+    margin-top: 20px;
+    height: 28px;
+    font-size: 15px;
+    float: right;
+    border: 2px solid #616161;
+    background-color: rgba(76,57,52,.5);
+    cursor: pointer;
+}
+#b2:hover{
+    color: #757575;
+    border: 1px solid #757575;
+}
+.footer{
+    text-align: center;
+    color: #757575;
+}
+/*添加的事项条样式*/
+.doing_list li,.done_list li{
+    height: 32px;
+    line-height: 32px;
+    background: #ffffff;
+    position: relative;
+    padding: 0 45px;
+    border-radius: 3px;
+    border-left: 5px solid #ff6700;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.07);
+    width: 650px;
+    margin: 10px auto 15px;
+}
+.doing_list li input,.done_list li input{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 7px;
+    left: 10px;
+    cursor: pointer;
+}
+.doing_list li i,.done_list li i{
+    font-size: 22px;
+    color: #ff6700;
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    cursor: pointer;
+}
+.done_list li{
+    color: #616161;
+    background: #b0b0b0;
+    border-left: 5px solid #616161;
+}
+.done_list li i{
+    color: #616161;
+}

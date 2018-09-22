@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="shortcut icon" href="../static/img/title_img.jpg">
+</head>
+<body>
+    <div class="background">
+        <div class="top_bar">
+            <div class="title"></div>
+        </div>
+        <div class="main">
+            <div class="left">
+                <div class="add_input">
+                    <input id="i1" type="text" value="  添加ToDo"/>
+                    <button id="b1" type="button">Add</button>
+                </div>
+                <div class="pow">
+                    <ul>
+                        <li class="white"></li>
+                        <li class="sp1">
+                            <span>
+                                >>> pow(0.99,(365*3))
+                                <br>1.6616443849302708e-05
+                            </span>
+                        </li>
+                        <li class="sp2">
+                            <span>
+                                >>> pow(1,(365*3))
+                                <br>1
+                            </span>
+                        </li>
+                        <li class="sp3">
+                            <span>
+                                >>> pow(1.01,(365*3))
+                                <br>53939.17405144048
+
+                            </span>
+                        </li>
+                        <li class="sp4">
+                            <span>
+                                >>> pow(1.02,(365*3))
+                                <br>2613292844.427423
+
+                            </span>
+                        </li>
+                        <li class="">
+                            "世上没有一蹴而就的成功，有的只是日积月累的坚持。"
+                        </li>
+                    </ul>
+                </div>
+                <div class='calendar' id='calendar'></div>
+            </div>
+            <div class="right">
+                <div class="things_list">
+                    <ul>
+                        <li class="doing">
+                            <div class="main-banner">
+                                <h2>正在进行</h2>
+                                <div class="count doing_count">
+                                    <span class="doing_num">0</span>
+                                    <i class="iconfont icon-yuan"></i>
+                                </div>
+                            </div>
+                            <div class="doing_list">
+                                <ul>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="done">
+                            <div class="main-banner">
+                                <h2>已经完成</h2>
+                                <div class="count done_count">
+                                    <span class="done_num">0</span>
+                                    <i class="iconfont icon-yuan"></i>
+                                </div>
+                            </div>
+                            <div class="done_list">
+                                <ul>
+
+                                </ul>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <button id="b2" type="button">全部清空</button>
+            </div>
+        </div>
+        <div class="footer">Copyright © 2018 todolist by 游小刀</div>
+    </div>
+</body>
+<script type="text/javascript" src="../static/js/home.js">
+
+</script>
+</html>
